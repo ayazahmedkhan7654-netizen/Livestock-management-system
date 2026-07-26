@@ -1,16 +1,28 @@
-# React + Vite
+# Livestock Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A complete web app for cattle, dairy & beef farm owners in Pakistan to track animals, health, milk production and finances.
 
-Currently, two official plugins are available:
+## Live Demo
+https://your-vercel-link-here  <-- deploy ke baad yahan dalenge
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Dashboard with total animals, milk, profit
+- Animal Register with search & filters
+- Health Checker with AI Advisor
+- Milk Production Log
+- Financial Ledger in PKR
+- Sales & Purchases
 
-## React Compiler
+## AI Feature Used
+**AI Health Advisor**: Farmers describe symptoms in Urdu/English and AI gives possible conditions, urgency level, and 3 immediate steps.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**System Prompt:**
+"You are a veterinary assistant for livestock farmers in Pakistan. User will describe animal symptoms in Urdu or English. 1. List 2-3 most likely conditions 2. Give Urgency: Low, Medium, Emergency 3. Give 3 immediate steps farmer can do at farm 4. End with: 'Ye mashwara hai, final treatment ke liye vet se rabta karein' Keep language simple, mix Urdu + English. Never give exact medicine dose."
 
-## Expanding the Oxlint configuration
+## Tech Stack
+React + Vite + Tailwind CSS + Gemini AI + Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## How to Run
+1. `npm install`
+2. Add `.env` with `VITE_GEMINI_API_KEY`
+3. `npm run dev`
